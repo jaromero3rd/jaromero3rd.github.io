@@ -66,6 +66,70 @@
           </tbody></table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <!-- Autonomous Drone Racing RL -->
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="images/drone_race_thumbnail.png" alt="drone_race_rl" width="160" style="border-radius: 8px;">
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <span class="papertitle">Autonomous Drone Racing with PPO</span>
+                <br>
+                <strong>Jaime A. Romero</strong>
+                <br>
+                <em>ESE 651 Final Project, 2026</em>
+                <br>
+                <p>
+                  Implemented high-performance autonomous racing agent using Proximal Policy Optimization (PPO). Designed and iteratively refined reward shaping strategies—balancing gradual ramp-ups for track progress, gate passage, action continuity, and collision avoidance throughout training. Explored state estimation and integrated recurrent neural networks (RNNs) to improve policy performance. Also experimented with Soft Actor-Critic entropy stabilization methods to smooth reward transitions. Through extensive tuning and evaluation, achieved consistent lap times of approximately 18 seconds.
+                </p>
+                <p style="font-size:small;">
+                  [ <a href="images/drone_race_rl_final.mp4">Video Demo</a> ]
+                </p>
+              </td>
+            </tr>
+
+            <!-- Sim-to-Real Drone Deployment -->
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="images/drone_real_world.jpg" alt="drone_real_world" width="160" style="border-radius: 8px;">
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <span class="papertitle">Sim-to-Real Drone Deployment</span>
+                <br>
+                <strong>Jaime A. Romero</strong>
+                <br>
+                <em>Physical Intelligence Final Project, 2026</em>
+                <br>
+                <p>
+                  Investigated the sim-to-real performance gap between a drone trained in Isaac Lab and its real-world deployment. Conducted system identification and flight testing to compare simulated and physical behavior, identifying a consistent altitude offset of approximately one foot between environments. Developed calibration and control adjustments to compensate for the discrepancy and improve flight accuracy.
+                </p>
+                <p style="font-size:small;">
+                  [ <a href="images/drone_real_world.mp4">Video Demo</a> ]
+                </p>
+              </td>
+            </tr>
+
+            <!-- FlexBot Capstone -->
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="images/sideView.jpeg" alt="flexbot_capstone" width="160" style="border-radius: 8px;">
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <span class="papertitle">FlexBot Reverse Engineering and ROS Integration</span>
+                <br>
+                <strong>Jaime A. Romero</strong>
+                <br>
+                <em>GRASP Lab Capstone Project, 2026</em>
+                <br>
+                <p>
+                  Repurposed the FlexBot—a differential-drive industrial robot donated to GRASP by Berkshire Grey—as a general mobile platform for future robotics research and teaching at Penn. Documented hardware and electrical architecture, evaluated custom control software, removed application-specific hardware, and integrated new systems including LiDAR, an external computer, and an odometry pipeline. Integrated the completed system into ROS 2 for teleoperation, odometry, and SLAM, and produced documentation for future users and development.
+                </p>
+                <p style="font-size:small;">
+                  [ <a href="images/BG-BOT.mp4">Video Demo</a> ]
+                  [ <a href="https://github.com/etsa2103/flexbot_capstone">GitHub</a> ]
+                </p>
+              </td>
+            </tr>
+
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <img src="images/mcgeer_v2_3_4.jpg" alt="passive_walker" width="160" style="border-radius: 8px;">
@@ -86,44 +150,23 @@
                 </p>
               </td>
             </tr>
-            <!-- Visual RL-->>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/cartpole.png" alt="passive_walker" width="160" style="border-radius: 8px;">
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <span class="papertitle">Stacked Image Resnet to statespace Cartpole Implementation</span>
-                  <br>
-                  <strong>Jaime A. Romero</strong>
-                  <br>
-                  <em>5200 ML Final Project, 2025</em>
-                  <br>
-                  <p>
-                    Trained cartpole on stacked gymnasium obs data using SAC. While training, collected images of env and paired them with the enviroment obs. Trained a Resnet to predict the stack of enviroment obs based on a stack of env images. Without finetuning our actor performed very well!                  </p>
-                  <p style="font-size:small;">
-                    [ <a href="images/visual_train_v3.mp4">Video Demo</a> ] 
-                  </p>
-                </td>
-              </tr>
 
-            <!-- Autonomous Drone Racing RL -->
+            <!-- Visual RL -->
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/drone_race_rl.jpg" alt="drone_race_rl" width="160" style="border-radius: 8px;">
+                <img src="images/cartpole.png" alt="passive_walker" width="160" style="border-radius: 8px;">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <span class="papertitle">Autonomous Drone Racing with PPO</span>
+                <span class="papertitle">Stacked Image Resnet to statespace Cartpole Implementation</span>
                 <br>
                 <strong>Jaime A. Romero</strong>
                 <br>
-                <em>ESE 651 Final Project, 2026</em>
+                <em>5200 ML Final Project, 2025</em>
                 <br>
                 <p>
-                  Implemented high-performance autonomous racing agent using Proximal Policy Optimization (PPO). Designed and iteratively refined reward shaping strategies—balancing gradual ramp-ups for track progress, gate passage, action continuity, and collision avoidance throughout training. Explored state estimation and integrated recurrent neural networks (RNNs) to improve policy performance. Also experimented with Soft Actor-Critic entropy stabilization methods to smooth reward transitions. Through extensive tuning and evaluation, achieved consistent lap times of approximately 18 seconds.
-                </p>
+                    Trained cartpole on stacked gymnasium obs data using SAC. While training, collected images of env and paired them with the enviroment obs. Trained a Resnet to predict the stack of enviroment obs based on a stack of env images. Without finetuning our actor performed very well!                  </p>
                 <p style="font-size:small;">
-                  [ <a href="images/drone_race_rl_final.mp4">Video Demo</a> ]
+                  [ <a href="images/visual_train_v3.mp4">Video Demo</a> ] 
                 </p>
               </td>
             </tr>
