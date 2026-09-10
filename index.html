@@ -20,10 +20,10 @@
                   Jaime A. Romero
                 </p>
                 <p>
-                  I'm a graduate student at the <a href="https://www.grasp.upenn.edu/">University of Pennsylvania GRASP Lab</a>, pursuing my Master's in Robotics. From 
+                  I'm a graduate student at the <a href="https://www.grasp.upenn.edu/">University of Pennsylvania GRASP Lab</a>, pursuing my Master's in Robotics.
                 </p>
                 <p>
-                  Currently working at <a href="https://www.whoop.com/us/en/">Whoop<a> as an ML engineer on their Sensor Intellegence Team! Previously, I worked at <a href="https://www.gm.com/">General Motors</a> on autonomous vehicle fleet systems and electric vehicle components. I completed my B.S. in Mechanical Engineering with a minor in Robotics at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>.
+                  Currently working at <a href="https://www.whoop.com/us/en/">Whoop</a> as an ML engineer on their Sensor Intelligence Team. Previously, I worked at <a href="https://www.gm.com/">General Motors</a> on autonomous vehicle fleet systems and electric vehicle components. I completed my B.S. in Mechanical Engineering with a minor in Robotics at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:jaromero3rd@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -66,6 +66,30 @@
           </tbody></table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <!-- Importance Neurons -->
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="images/importance_neurons.svg" alt="importance_neurons" width="160" style="border-radius: 8px;">
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <span class="papertitle">Importance Neurons: Does an LLM's MLP Encode How Hard It Will Fight for a Goal?</span>
+                <br>
+                <strong>Jaime A. Romero</strong>
+                <br>
+                <em>Mechanistic Interpretability, 2026</em>
+                <br>
+                <p>
+                  An interactive mechanistic-interpretability report on <em>persistence</em>—how many times a model re-attempts a staked riddle ("solve this and you get a Ferrari / save 10 lives") before giving up—and whether the activation energy (CETT) of specific MLP neurons on the opening prompt predicts it. The report toggles the full analysis across three models, combining a linear-probe regression, an L1-logistic context-fill classifier, a preference-vs-persistence choice experiment, activation steering, and a raw-conversation viewer.
+                </p>
+                <p>
+                  In <strong>gemma-2-2b</strong> the coupling is real: a sparse set of importance neurons predicts persistence at AUC 0.82, and amplifying those neurons ×3 causally roughly doubles it. In <strong>qwen2.5-14B</strong> and <strong>deepseek-r1-14B</strong> it does not replicate—deepseek scores R² −0.38 on regression and AUC 0.625 against a 0.628 random baseline. Yet deepseek is by far the most persistent behaviorally (median 51 attempts vs. 2 for gemma and 4 for qwen, with 32% filling the 32K context), consistent with a reasoning model whose persistence is driven by the &lt;think&gt; trace <em>after</em> the prompt—invisible to a single opening-prompt forward pass.
+                </p>
+                <p style="font-size:small;">
+                  [ <a href="https://importance-neurons.pages.dev">Interactive Report</a> ]
+                </p>
+              </td>
+            </tr>
+
             <!-- Autonomous Drone Racing RL -->
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
